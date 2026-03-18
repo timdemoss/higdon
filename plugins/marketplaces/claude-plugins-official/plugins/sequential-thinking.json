@@ -1,0 +1,21 @@
+{
+  "id": "sequential-thinking",
+  "name": "Sequential Thinking",
+  "description": "Enables dynamic and reflective problem-solving through a structured sequential thinking process. Helps break down complex problems into manageable steps.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["reasoning", "productivity"],
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+  },
+  "requiredEnv": [],
+  "tools": [
+    {
+      "name": "sequentialthinking",
+      "description": "A tool for dynamic and reflective problem-solving through structured sequential thought steps"
+    }
+  ]
+}

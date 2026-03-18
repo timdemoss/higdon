@@ -1,0 +1,63 @@
+{
+  "id": "slack",
+  "name": "Slack",
+  "description": "Interact with Slack workspaces to read channels, send messages, manage users, and access workspace data.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["communication", "productivity"],
+  "icon": "https://slack.com/favicon.ico",
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-slack"],
+    "env": {
+      "SLACK_BOT_TOKEN": "<your-slack-bot-token>",
+      "SLACK_TEAM_ID": "<your-slack-team-id>"
+    }
+  },
+  "requiredEnv": [
+    {
+      "name": "SLACK_BOT_TOKEN",
+      "description": "Slack Bot User OAuth Token (starts with xoxb-). Create a Slack App at https://api.slack.com/apps"
+    },
+    {
+      "name": "SLACK_TEAM_ID",
+      "description": "Slack Team/Workspace ID (starts with T)"
+    }
+  ],
+  "tools": [
+    {
+      "name": "slack_list_channels",
+      "description": "List public channels in the Slack workspace"
+    },
+    {
+      "name": "slack_post_message",
+      "description": "Post a new message to a Slack channel"
+    },
+    {
+      "name": "slack_reply_to_thread",
+      "description": "Reply to a specific message thread in Slack"
+    },
+    {
+      "name": "slack_add_reaction",
+      "description": "Add an emoji reaction to a Slack message"
+    },
+    {
+      "name": "slack_get_channel_history",
+      "description": "Get recent messages from a Slack channel"
+    },
+    {
+      "name": "slack_get_thread_replies",
+      "description": "Get all replies in a Slack message thread"
+    },
+    {
+      "name": "slack_get_users",
+      "description": "Get a list of users in the Slack workspace"
+    },
+    {
+      "name": "slack_get_user_profile",
+      "description": "Get profile information for a specific Slack user"
+    }
+  ]
+}

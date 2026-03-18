@@ -1,0 +1,77 @@
+{
+  "id": "gitlab",
+  "name": "GitLab",
+  "description": "Interact with GitLab repositories, merge requests, issues, CI/CD pipelines, and more via the GitLab API.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["version-control", "collaboration", "development", "ci-cd"],
+  "icon": "https://gitlab.com/favicon.ico",
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-gitlab"],
+    "env": {
+      "GITLAB_PERSONAL_ACCESS_TOKEN": "<your-gitlab-token>",
+      "GITLAB_API_URL": "https://gitlab.com/api/v4"
+    }
+  },
+  "requiredEnv": [
+    {
+      "name": "GITLAB_PERSONAL_ACCESS_TOKEN",
+      "description": "GitLab Personal Access Token. Create one at https://gitlab.com/-/user_settings/personal_access_tokens"
+    }
+  ],
+  "optionalEnv": [
+    {
+      "name": "GITLAB_API_URL",
+      "description": "GitLab API URL (defaults to https://gitlab.com/api/v4 for self-hosted instances)"
+    }
+  ],
+  "tools": [
+    {
+      "name": "create_or_update_file",
+      "description": "Create or update a single file in a GitLab repository"
+    },
+    {
+      "name": "search_repositories",
+      "description": "Search for GitLab repositories"
+    },
+    {
+      "name": "create_repository",
+      "description": "Create a new GitLab repository"
+    },
+    {
+      "name": "get_file_contents",
+      "description": "Get the contents of a file or directory from a GitLab repository"
+    },
+    {
+      "name": "push_files",
+      "description": "Push multiple files to a GitLab repository in a single commit"
+    },
+    {
+      "name": "create_issue",
+      "description": "Create a new issue in a GitLab repository"
+    },
+    {
+      "name": "create_merge_request",
+      "description": "Create a new merge request in a GitLab repository"
+    },
+    {
+      "name": "fork_repository",
+      "description": "Fork a GitLab repository"
+    },
+    {
+      "name": "create_branch",
+      "description": "Create a new branch in a GitLab repository"
+    },
+    {
+      "name": "get_merge_request",
+      "description": "Get details of a specific merge request"
+    },
+    {
+      "name": "list_merge_requests",
+      "description": "List merge requests in a GitLab repository"
+    }
+  ]
+}

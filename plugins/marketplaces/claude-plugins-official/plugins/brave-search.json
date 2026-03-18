@@ -1,0 +1,34 @@
+{
+  "id": "brave-search",
+  "name": "Brave Search",
+  "description": "Web and local search using Brave Search API. Provides tools for web search, local business search, and summarization.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["search", "web"],
+  "icon": "https://brave.com/favicon.ico",
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+    "env": {
+      "BRAVE_API_KEY": "<your-brave-api-key>"
+    }
+  },
+  "requiredEnv": [
+    {
+      "name": "BRAVE_API_KEY",
+      "description": "Brave Search API key. Get one at https://brave.com/search/api/"
+    }
+  ],
+  "tools": [
+    {
+      "name": "brave_web_search",
+      "description": "Perform web searches using Brave Search API"
+    },
+    {
+      "name": "brave_local_search",
+      "description": "Search for local businesses and places using Brave Local Search API"
+    }
+  ]
+}

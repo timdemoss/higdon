@@ -1,0 +1,19 @@
+{
+  "id": "claude-plugins-official",
+  "name": "Claude Official Plugins",
+  "description": "Official plugins maintained by Anthropic for Claude Code",
+  "version": "1.0.0",
+  "url": "https://claude.ai/plugins",
+  "plugins": [
+    "brave-search",
+    "filesystem",
+    "github",
+    "gitlab",
+    "google-drive",
+    "postgres",
+    "puppeteer",
+    "sequential-thinking",
+    "slack",
+    "sqlite"
+  ]
+}

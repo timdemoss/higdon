@@ -1,0 +1,47 @@
+{
+  "id": "sqlite",
+  "name": "SQLite",
+  "description": "Connect to SQLite databases for read/write operations, schema inspection, and data analysis. Includes business intelligence features.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["database", "sql"],
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-sqlite", "--db-path", "/path/to/database.db"]
+  },
+  "requiredEnv": [],
+  "tools": [
+    {
+      "name": "read_query",
+      "description": "Execute a SELECT query on the SQLite database"
+    },
+    {
+      "name": "write_query",
+      "description": "Execute an INSERT, UPDATE, or DELETE query on the SQLite database"
+    },
+    {
+      "name": "create_table",
+      "description": "Create a new table in the SQLite database"
+    },
+    {
+      "name": "list_tables",
+      "description": "List all tables in the SQLite database"
+    },
+    {
+      "name": "describe_table",
+      "description": "Get the schema information for a specific table"
+    },
+    {
+      "name": "append_insight",
+      "description": "Add a business insight to the memo resource"
+    }
+  ],
+  "resources": [
+    {
+      "uri": "memo://insights",
+      "description": "A continuously updated memo with accumulated business insights discovered during analysis"
+    }
+  ]
+}

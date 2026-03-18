@@ -1,0 +1,27 @@
+{
+  "id": "postgres",
+  "name": "PostgreSQL",
+  "description": "Connect to PostgreSQL databases to run read-only queries and inspect database schemas.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["database", "sql"],
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/mydb"]
+  },
+  "requiredEnv": [],
+  "tools": [
+    {
+      "name": "query",
+      "description": "Run a read-only SQL query against the PostgreSQL database"
+    }
+  ],
+  "resources": [
+    {
+      "uriTemplate": "postgres://{host}/{database}/{schema}/{table}",
+      "description": "Access table schemas as resources"
+    }
+  ]
+}

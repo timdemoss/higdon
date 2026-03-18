@@ -1,0 +1,39 @@
+{
+  "id": "google-drive",
+  "name": "Google Drive",
+  "description": "Integrate with Google Drive to search, read, and manage files. Supports Google Docs, Sheets, Slides, and other formats.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["storage", "productivity", "google"],
+  "icon": "https://drive.google.com/favicon.ico",
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-gdrive"],
+    "env": {
+      "GDRIVE_CLIENT_ID": "<your-client-id>",
+      "GDRIVE_CLIENT_SECRET": "<your-client-secret>"
+    }
+  },
+  "requiredEnv": [
+    {
+      "name": "GDRIVE_CLIENT_ID",
+      "description": "Google OAuth 2.0 Client ID from Google Cloud Console"
+    },
+    {
+      "name": "GDRIVE_CLIENT_SECRET",
+      "description": "Google OAuth 2.0 Client Secret from Google Cloud Console"
+    }
+  ],
+  "tools": [
+    {
+      "name": "search",
+      "description": "Search for files in Google Drive"
+    },
+    {
+      "name": "read_file",
+      "description": "Read the contents of a file from Google Drive"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "filesystem",
+  "name": "Filesystem",
+  "description": "Provides tools for reading, writing, and managing files and directories on the local filesystem. Supports configurable access controls.",
+  "version": "0.6.2",
+  "author": "Anthropic",
+  "license": "MIT",
+  "categories": ["files", "storage"],
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "mcpConfig": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/directory"]
+  },
+  "requiredEnv": [],
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read the complete contents of a file"
+    },
+    {
+      "name": "read_multiple_files",
+      "description": "Read the contents of multiple files simultaneously"
+    },
+    {
+      "name": "write_file",
+      "description": "Create a new file or overwrite an existing file"
+    },
+    {
+      "name": "edit_file",
+      "description": "Make line-based edits to a text file"
+    },
+    {
+      "name": "create_directory",
+      "description": "Create a new directory or ensure a directory exists"
+    },
+    {
+      "name": "list_directory",
+      "description": "Get a detailed listing of all files and directories in a path"
+    },
+    {
+      "name": "directory_tree",
+      "description": "Get a recursive tree view of files and directories"
+    },
+    {
+      "name": "move_file",
+      "description": "Move or rename files and directories"
+    },
+    {
+      "name": "search_files",
+      "description": "Recursively search for files and directories matching a pattern"
+    },
+    {
+      "name": "get_file_info",
+      "description": "Retrieve metadata about a file or directory"
+    }
+  ]
+}
