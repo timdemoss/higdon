@@ -21,6 +21,10 @@ Each plugin manifest wraps an MCP server from https://github.com/modelcontextpro
 - `requiredEnv` is always present, even when empty (`[]`). Each entry has `name` and `description` (including where to obtain the credential).
 - `tools` lists every tool the MCP server exposes, each with `name` and `description`.
 
+## Workflow skills
+
+`.claude/skills/` defines six project skills implementing an "uncover your unknowns" workflow (documented in `docs/unknowns-playbook.md`): `/blindspot`, `/interview`, and `/brainstorm` before building; `/impl-notes` during implementation; `/quiz` and `/explainer` after. Prefer starting nontrivial or unfamiliar work with one of the before-building skills.
+
 ## Making changes
 
 - When adding a plugin: create `plugins/<id>.json` following the schema above and add the `id` to the `plugins` array in `marketplace.json`. Both edits are required — a manifest not listed in the index is orphaned.
