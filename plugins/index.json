@@ -15,6 +15,14 @@
       "path": "marketplaces/coreyhaines31-marketingskills",
       "source": "https://github.com/coreyhaines31/marketingskills",
       "enabled": true
+    },
+    {
+      "id": "juliusbrussee-caveman",
+      "name": "Caveman by Julius Brussee",
+      "description": "Ultra-compressed communication mode. Cuts 65% of output tokens (measured) while keeping full technical accuracy.",
+      "path": "marketplaces/juliusbrussee-caveman",
+      "source": "https://github.com/juliusbrussee/caveman",
+      "enabled": true
     }
   ]
 }
