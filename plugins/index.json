@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "marketplaces": [
+    {
+      "id": "claude-plugins-official",
+      "name": "Claude Official Plugins",
+      "description": "Official plugins maintained by Anthropic for Claude Code",
+      "path": "marketplaces/claude-plugins-official",
+      "enabled": true
+    }
+  ]
+}
