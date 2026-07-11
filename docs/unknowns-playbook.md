@@ -38,6 +38,10 @@ Almost every session should start with one of these — even a five-minute explo
 7. **`/quiz`** — Claude generates an HTML report of the changes plus a quiz on the behavior, trade-offs, and failure modes. The merge gate: don't merge until you pass clean. If you can't explain the change, you don't understand it yet.
 8. **`/explainer`** — bundles the prototype, the spec, and the implementation notes into one stakeholder-readable document: the pitch, what was built, the decisions that shaped it, and the open questions.
 
+## Where the skills work
+
+The skills are domain-general — "implementation" can be a feature, a job search, a trip plan, or a document. They load automatically in any Claude Code session (CLI, desktop, web, IDE) when installed in the project's `.claude/skills/` or your `~/.claude/skills/`. For claude.ai chat and Cowork, upload the per-skill zips from `dist/claude-ai-skills/` under Settings → Capabilities → Skills; there they trigger from their descriptions rather than slash commands.
+
 ## One rule of thumb
 
 Every explainer, brainstorm, interview, prototype, and reference is a cheap way to find out what you didn't know — before it gets expensive to fix.

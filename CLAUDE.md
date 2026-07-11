@@ -23,7 +23,9 @@ Each plugin manifest wraps an MCP server from https://github.com/modelcontextpro
 
 ## Workflow skills
 
-`.claude/skills/` defines six project skills implementing an "uncover your unknowns" workflow (documented in `docs/unknowns-playbook.md`): `/blindspot`, `/interview`, and `/brainstorm` before building; `/impl-notes` during implementation; `/quiz` and `/explainer` after. Prefer starting nontrivial or unfamiliar work with one of the before-building skills.
+`.claude/skills/` defines six project skills implementing an "uncover your unknowns" workflow (documented in `docs/unknowns-playbook.md`): `/blindspot`, `/interview`, and `/brainstorm` before starting; `/impl-notes` during execution; `/quiz` and `/explainer` after. The skills are domain-general (they work for non-code tasks too). Prefer starting nontrivial or unfamiliar work with one of the before-starting skills.
+
+`dist/claude-ai-skills/` holds one zip per skill, ready to upload to claude.ai (Settings → Capabilities → Skills) so the same workflow is available in chat and Cowork. Rebuild after editing a skill: `cd .claude/skills && zip -r ../../dist/claude-ai-skills/<id>.zip <id>`.
 
 ## Making changes
 

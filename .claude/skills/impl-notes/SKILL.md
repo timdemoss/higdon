@@ -1,11 +1,11 @@
 ---
 name: impl-notes
-description: Keep a running implementation-notes.md during a coding task — log decisions, deviations from the plan, and surprises so they can be reviewed and learned from. Use when starting a nontrivial implementation, or when the user invokes /impl-notes.
+description: Keep a running decision log during a substantial task — decisions made, deviations from the plan, and surprises — so they can be reviewed and learned from. Works for any long-running work, not just coding (research, applications, planning, writing). Use when starting nontrivial work, or when the user invokes /impl-notes.
 ---
 
-# Implementation Notes
+# Implementation Notes / Decision Log
 
-For the duration of the current implementation task, maintain a temporary `implementation-notes.md` at the repo root (git-ignore it or delete it before merge unless the user wants it kept).
+For the duration of the current task, maintain a running decision log. With filesystem access, keep it as a temporary `implementation-notes.md` in the working directory (git-ignore it or delete it before merge unless the user wants it kept). Without a filesystem, keep a clearly-marked "Decision log" section that you carry forward and update in your replies.
 
 ## What to log
 
@@ -13,7 +13,7 @@ Append an entry whenever one of these happens — not for routine progress:
 
 - **A decision the plan didn't cover.** What came up, the options, which you chose, and why.
 - **A deviation from the plan or prompt.** What the plan said, what you did instead, and the evidence that forced the change.
-- **An unexpected edge case.** When one appears mid-implementation: pick the conservative option (the one easiest to reverse), log it here with the alternatives, and keep working — do not stall the task on it. Flag entries that deserve the user's review with `⚠`.
+- **An unexpected complication.** When one appears mid-task: pick the conservative option (the one easiest to reverse), log it here with the alternatives, and keep working — do not stall the task on it. Flag entries that deserve the user's review with `⚠`.
 - **Something learned that invalidates an assumption** from the brief, interview, or blindspot pass.
 
 Entry format: one short paragraph, timestamped, written for someone rereading it next week — no shorthand that only makes sense mid-task.
