@@ -7,6 +7,14 @@
       "description": "Official plugins maintained by Anthropic for Claude Code",
       "path": "marketplaces/claude-plugins-official",
       "enabled": true
+    },
+    {
+      "id": "coreyhaines31-marketingskills",
+      "name": "Marketing Skills by Corey Haines",
+      "description": "47 marketing skills for technical marketers and founders: CRO, copywriting, cold email, SEO, paid ads, and more",
+      "path": "marketplaces/coreyhaines31-marketingskills",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "enabled": true
     }
   ]
 }
