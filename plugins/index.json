@@ -23,6 +23,14 @@
       "path": "marketplaces/juliusbrussee-caveman",
       "source": "https://github.com/juliusbrussee/caveman",
       "enabled": true
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks Secret Scanning",
+      "description": "Scan for leaked secrets with the Gitleaks CLI: working-tree and git-history scans, custom rules and allowlists, baselines, and guided remediation for exposed credentials.",
+      "path": "marketplaces/gitleaks",
+      "source": "https://github.com/gitleaks/gitleaks",
+      "enabled": true
     }
   ]
 }

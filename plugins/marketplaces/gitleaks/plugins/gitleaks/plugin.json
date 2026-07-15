@@ -1,0 +1,13 @@
+{
+  "name": "gitleaks",
+  "description": "Secret scanning with Gitleaks: detect hardcoded API keys, tokens, passwords, and private keys in the working tree or git history, configure custom rules and allowlists, and remediate leaks safely.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tim DeMoss"
+  },
+  "homepage": "https://github.com/gitleaks/gitleaks",
+  "repository": "https://github.com/gitleaks/gitleaks",
+  "license": "MIT",
+  "skills": "./skills",
+  "commands": "./commands"
+}

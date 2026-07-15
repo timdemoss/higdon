@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gitleaks",
+  "description": "Secret scanning for Claude Code powered by Gitleaks. Detect hardcoded API keys, tokens, passwords, and private keys in your working tree and git history, and get guided remediation.",
+  "owner": {
+    "name": "Tim DeMoss",
+    "url": "https://github.com/timdemoss"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "tool": "https://github.com/gitleaks/gitleaks"
+  },
+  "plugins": [
+    {
+      "name": "gitleaks",
+      "description": "Scan for leaked secrets with the Gitleaks CLI: on-demand scans of the working tree or full git history, custom rule and allowlist configuration, baseline management, and remediation guidance for rotating and purging exposed credentials.",
+      "source": "./plugins/gitleaks",
+      "category": "security"
+    }
+  ]
+}
