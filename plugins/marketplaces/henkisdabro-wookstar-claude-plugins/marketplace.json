@@ -1,0 +1,30 @@
+{
+  "name": "wookstar-claude-plugins",
+  "owner": {
+    "name": "henkisdabro",
+    "email": "whom-wealthy.2z@icloud.com"
+  },
+  "plugins": [
+    {
+      "name": "google-apps-script",
+      "source": "./plugins/google-apps-script",
+      "description": "Comprehensive Google Apps Script development guide covering SpreadsheetApp, DocumentApp, GmailApp, DriveApp, CalendarApp, FormApp, SlidesApp, triggers, and Workspace automation",
+      "version": "1.0.1",
+      "author": {
+        "name": "henkisdabro",
+        "email": "whom-wealthy.2z@icloud.com"
+      },
+      "homepage": "https://github.com/henkisdabro/wookstar-claude-plugins",
+      "keywords": [
+        "google-apps-script",
+        "workspace",
+        "automation",
+        "sheets",
+        "docs",
+        "gmail",
+        "drive"
+      ],
+      "category": "development"
+    }
+  ]
+}

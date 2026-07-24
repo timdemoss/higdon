@@ -23,6 +23,14 @@
       "path": "marketplaces/juliusbrussee-caveman",
       "source": "https://github.com/juliusbrussee/caveman",
       "enabled": true
+    },
+    {
+      "id": "henkisdabro-wookstar-claude-plugins",
+      "name": "Wookstar Claude Plugins by henkisdabro",
+      "description": "Google Apps Script development guide: SpreadsheetApp, DocumentApp, GmailApp, DriveApp, CalendarApp, triggers, and Workspace automation (google-apps-script plugin only)",
+      "path": "marketplaces/henkisdabro-wookstar-claude-plugins",
+      "source": "https://github.com/henkisdabro/wookstar-claude-plugins",
+      "enabled": true
     }
   ]
 }
